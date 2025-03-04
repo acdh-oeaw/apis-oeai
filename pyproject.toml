@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "apis-oeai"
+version = "0.1.0"
+description = "APIS OEAI"
+authors = ["Matthias Schlögl"]
+license = "MIT"
+packages = [{include = "apis_ontology"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+apis-core-rdf = "0.39.0"
+apis-acdhch-default-settings = "2.3.1"
+django-interval = "^0.3.2"
+django-json-editor-field = "^0.4.2"
+psycopg2 = "^2.9.10"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.9"
+pyright = "^1.1.396"
+debugpy = "^1.8.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
