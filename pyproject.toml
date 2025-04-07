@@ -16,7 +16,7 @@ django-json-editor-field = "^0.4.2"
 psycopg2 = "^2.9.10"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.9.9"
+ruff = "^0.11.4"
 pyright = "^1.1.396"
 debugpy = "^1.8.12"
 
