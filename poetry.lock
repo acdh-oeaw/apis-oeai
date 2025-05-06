@@ -17,22 +17,22 @@ importlib-resources = ">=6.4.5,<7"
 
 [[package]]
 name = "apis-acdhch-default-settings"
-version = "2.3.1"
+version = "2.6.0"
 description = "Default settings for APIS instances at the ACDH-CH"
 optional = false
-python-versions = "<4.0,>=3.11"
+python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "apis_acdhch_default_settings-2.3.1-py3-none-any.whl", hash = "sha256:bb7a58f678371e18b087419a0f2b0ec6228ee7da54fdab30d827e74f53261de4"},
-    {file = "apis_acdhch_default_settings-2.3.1.tar.gz", hash = "sha256:d32fd9a87ec4a34b70dc442f3eab859becb5381de5d131b830e1e2bc33ee4a68"},
+    {file = "apis_acdhch_default_settings-2.6.0-py3-none-any.whl", hash = "sha256:2c31fad9c27bae0146a95f199e8e5cf12768478c9119d3f40104d08dafd533d6"},
+    {file = "apis_acdhch_default_settings-2.6.0.tar.gz", hash = "sha256:1b355a89dd80f85d0b95e6ff9d58c459af2bd369b9c573842023c26089fcef24"},
 ]
 
 [package.dependencies]
-dj-database-url = ">=2.0.0,<3.0.0"
+dj-database-url = ">=2.0.0,<3.0"
 django-allow-cidr = ">=0.6,<0.8"
-django-auth-ldap = ">=4.6.0,<5.0.0"
+django-auth-ldap = ">=4.6.0,<5.0"
 django-csp = ">=3.7,<4.0"
-django-removals = ">=1.0.5,<2.0.0"
+django-removals = ">=1.0.5,<=2.0"
 opentelemetry-distro = "*"
 opentelemetry-exporter-otlp = "*"
 opentelemetry-instrumentation-asgi = "*"
@@ -40,7 +40,7 @@ opentelemetry-instrumentation-django = "*"
 opentelemetry-instrumentation-logging = "*"
 opentelemetry-instrumentation-psycopg2 = "*"
 opentelemetry-instrumentation-wsgi = "*"
-sentry-sdk = ">=1.26.0,<2.0.0"
+sentry-sdk = ">=1.26.0,<2.0"
 whitenoise = ">=5.2,<7.0"
 
 [[package]]
@@ -1794,4 +1794,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.11"
-content-hash = "180572b7ed6e9c10017d85f1c21ce54d2023c1bc66df4f2f6678bc0019ebf30e"
+content-hash = "b9f8ec746e4b5a7f050661aeaaf5ef0707fea74ce33eb86ace96a6fbceaddd5e"
