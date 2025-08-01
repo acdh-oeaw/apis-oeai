@@ -1,25 +1,27 @@
-[tool.poetry]
+[project]
 name = "apis-oeai"
 version = "0.1.0"
 description = "APIS OEAI"
-authors = ["Matthias Schlögl"]
+authors = [{ name = "Matthias Schlögl" }]
+requires-python = "~=3.11.0"
 license = "MIT"
-packages = [{include = "apis_ontology"}]
+dependencies = [
+    "apis-core-rdf==0.50.1",
+    "apis-acdhch-default-settings==2.11.0",
+    "django-interval>=0.5.1,<0.6",
+    "django-json-editor-field>=0.4.2,<0.5",
+    "psycopg2-binary>=2.9.10",
+]
 
+[dependency-groups]
+dev = ["ruff>=0.11.8,<0.12", "pyright>=1.1.400,<2", "debugpy>=1.8.14,<2"]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-apis-core-rdf = "0.45.0"
-apis-acdhch-default-settings = "2.3.1"
-django-interval = "^0.5.1"
-django-json-editor-field = "^0.4.2"
-psycopg2 = "^2.9.10"
+[tool.hatch.build.targets.sdist]
+include = ["apis_ontology"]
 
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.11.8"
-pyright = "^1.1.400"
-debugpy = "^1.8.14"
+[tool.hatch.build.targets.wheel]
+include = ["apis_ontology"]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
