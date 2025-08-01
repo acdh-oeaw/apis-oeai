@@ -8,7 +8,7 @@ DEBUG = True
 INSTALLED_APPS += [  # noqa: F405
     "django.contrib.postgres",
     #    "apis_core.collections",
-    "apis_core.history",
+    # "apis_core.history",
     "django_json_editor_field",
 ]
 INSTALLED_APPS.remove("apis_ontology")

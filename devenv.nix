@@ -3,11 +3,11 @@
 {
   dotenv.enable = true;
 
-  packages = [ 
-  	pkgs.git 
-	pkgs.openldap 
-	pkgs.gcc 
-  	pkgs.openssl 
+  packages = [
+  	pkgs.git
+	pkgs.openldap
+	pkgs.gcc
+  	pkgs.openssl
 	pkgs.cyrus_sasl
 	pkgs.postgresql
 	pkgs.tree-sitter
@@ -15,11 +15,9 @@
 
   languages.python = {
 	enable = true;
-	version = "3.12";
+	version = "3.11";
 	manylinux.enable = false;
-	poetry = {
-		enable = true;
-	};
+	uv.enable = true;
   };
       services.postgres = {
 	enable = true;
@@ -35,5 +33,8 @@
       CREATE EXTENSION IF NOT EXISTS unaccent;
     '';
   };
-}
+  enterShell = ''
+source .devenv/state/venv/bin/activate
+'';
 
+}
