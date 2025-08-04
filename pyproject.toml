@@ -6,7 +6,7 @@ authors = [{ name = "Matthias Schlögl" }]
 requires-python = "~=3.11.0"
 license = "MIT"
 dependencies = [
-    "apis-core-rdf==0.50.1",
+    "apis-core-rdf==0.50.2",
     "apis-acdhch-default-settings==2.11.0",
     "django-interval>=0.5.1,<0.6",
     "django-json-editor-field>=0.4.2,<0.5",
