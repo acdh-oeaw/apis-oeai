@@ -7,7 +7,7 @@ requires-python = "~=3.11.0"
 license = "MIT"
 dependencies = [
     "apis-core-rdf==0.50.2",
-    "apis-acdhch-default-settings==2.11.0",
+    "apis-acdhch-default-settings==2.12.1",
     "django-interval>=0.5.1,<0.6",
     "django-json-editor-field>=0.4.2,<0.5",
     "psycopg2-binary>=2.9.10",
