@@ -17,7 +17,11 @@ class Profession(GenericModel, models.Model):
         return str(self.label)
 
 
-class Person(VersionMixin, AbstractEntity):
+class OeaiBaseEntity:
+    pass
+
+
+class Person(OeaiBaseEntity, VersionMixin, AbstractEntity):
     PERIOD = [
         ("Byzanz", "Byzanz"),
         ("Griechen", "Griechen"),
@@ -157,7 +161,11 @@ class Person(VersionMixin, AbstractEntity):
         return str(self.label)
 
 
-class Institution(VersionMixin, AbstractEntity):
+class Institution(
+    OeaiBaseEntity,
+    VersionMixin,
+    AbstractEntity,
+):
     label = models.CharField(max_length=255, help_text="PrefLabel in German")
     abbreviation = models.CharField(max_length=100, blank=True, null=True)
     easydb4_reference = models.CharField(max_length=100, null=True, blank=True)
@@ -235,7 +243,7 @@ class Institution(VersionMixin, AbstractEntity):
         return str(self.label)
 
 
-class Place(VersionMixin, E53_Place, AbstractEntity):
+class Place(OeaiBaseEntity, VersionMixin, E53_Place, AbstractEntity):
     class Meta(VersionMixin.Meta, E53_Place.Meta, AbstractEntity.Meta):
         verbose_name = "Place"
         verbose_name_plural = "Places"
