@@ -5,15 +5,21 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('apis_ontology', '0003_alter_person_person_type_alter_person_profession_and_more'),
+        (
+            "apis_ontology",
+            "0003_alter_person_person_type_alter_person_profession_and_more",
+        ),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='person',
-            name='profession',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='apis_ontology.profession'),
+            model_name="person",
+            name="profession",
+            field=models.ForeignKey(
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to="apis_ontology.profession",
+            ),
         ),
     ]

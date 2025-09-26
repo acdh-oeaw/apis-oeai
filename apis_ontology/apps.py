@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ApisOntologyConfig(AppConfig):
-    name = 'apis_ontology'
+    name = "apis_ontology"

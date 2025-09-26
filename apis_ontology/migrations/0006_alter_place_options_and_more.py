@@ -4,246 +4,337 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('apis_ontology', '0005_contains_alter_institution_easydb4_reference_and_more'),
+        ("apis_ontology", "0005_contains_alter_institution_easydb4_reference_and_more"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='place',
-            options={'ordering': ['label'], 'verbose_name': 'Place', 'verbose_name_plural': 'Places'},
+            name="place",
+            options={
+                "ordering": ["label"],
+                "verbose_name": "Place",
+                "verbose_name_plural": "Places",
+            },
         ),
         migrations.RemoveField(
-            model_name='versioninstitution',
-            name='version_tag',
+            model_name="versioninstitution",
+            name="version_tag",
         ),
         migrations.RemoveField(
-            model_name='versionperson',
-            name='version_tag',
+            model_name="versionperson",
+            name="version_tag",
         ),
         migrations.RemoveField(
-            model_name='versionplace',
-            name='version_tag',
+            model_name="versionplace",
+            name="version_tag",
         ),
         migrations.AlterField(
-            model_name='contains',
-            name='begin_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="contains",
+            name="begin_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='contains',
-            name='begin_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="contains",
+            name="begin_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='contains',
-            name='begin_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="contains",
+            name="begin_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='contains',
-            name='end_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="contains",
+            name="end_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='contains',
-            name='end_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="contains",
+            name="end_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='contains',
-            name='end_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="contains",
+            name="end_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='engagedin',
-            name='begin_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="engagedin",
+            name="begin_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='engagedin',
-            name='begin_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="engagedin",
+            name="begin_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='engagedin',
-            name='begin_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="engagedin",
+            name="begin_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='engagedin',
-            name='end_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="engagedin",
+            name="end_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='engagedin',
-            name='end_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="engagedin",
+            name="end_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='engagedin',
-            name='end_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="engagedin",
+            name="end_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='includes',
-            name='begin_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="includes",
+            name="begin_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='includes',
-            name='begin_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="includes",
+            name="begin_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='includes',
-            name='begin_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="includes",
+            name="begin_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='includes',
-            name='end_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="includes",
+            name="end_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='includes',
-            name='end_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="includes",
+            name="end_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='includes',
-            name='end_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="includes",
+            name="end_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='locatedin',
-            name='begin_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="locatedin",
+            name="begin_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='locatedin',
-            name='begin_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="locatedin",
+            name="begin_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='locatedin',
-            name='begin_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="locatedin",
+            name="begin_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='locatedin',
-            name='end_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="locatedin",
+            name="end_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='locatedin',
-            name='end_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="locatedin",
+            name="end_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='locatedin',
-            name='end_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="locatedin",
+            name="end_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='date_of_birth_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="person",
+            name="date_of_birth_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='date_of_birth_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="person",
+            name="date_of_birth_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='date_of_birth_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="person",
+            name="date_of_birth_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='date_of_death_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="person",
+            name="date_of_death_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='date_of_death_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="person",
+            name="date_of_death_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='date_of_death_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="person",
+            name="date_of_death_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='place',
-            name='feature_code',
-            field=models.CharField(blank=True, default='', help_text='<a href="https://www.geonames.org/export/codes.html">Geonames Feature Code List</a>', max_length=16, verbose_name='feature code'),
+            model_name="place",
+            name="feature_code",
+            field=models.CharField(
+                blank=True,
+                default="",
+                help_text='<a href="https://www.geonames.org/export/codes.html">Geonames Feature Code List</a>',
+                max_length=16,
+                verbose_name="feature code",
+            ),
         ),
         migrations.AlterField(
-            model_name='place',
-            name='label',
-            field=models.CharField(blank=True, default='', max_length=4096, verbose_name='label'),
+            model_name="place",
+            name="label",
+            field=models.CharField(
+                blank=True, default="", max_length=4096, verbose_name="label"
+            ),
         ),
         migrations.AlterField(
-            model_name='place',
-            name='latitude',
-            field=models.FloatField(blank=True, null=True, verbose_name='latitude'),
+            model_name="place",
+            name="latitude",
+            field=models.FloatField(blank=True, null=True, verbose_name="latitude"),
         ),
         migrations.AlterField(
-            model_name='place',
-            name='longitude',
-            field=models.FloatField(blank=True, null=True, verbose_name='longitude'),
+            model_name="place",
+            name="longitude",
+            field=models.FloatField(blank=True, null=True, verbose_name="longitude"),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='date_of_birth_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="versionperson",
+            name="date_of_birth_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='date_of_birth_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="versionperson",
+            name="date_of_birth_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='date_of_birth_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="versionperson",
+            name="date_of_birth_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='date_of_death_date_from',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="versionperson",
+            name="date_of_death_date_from",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='date_of_death_date_sort',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="versionperson",
+            name="date_of_death_date_sort",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='date_of_death_date_to',
-            field=models.DateField(auto_created=True, blank=True, editable=False, null=True),
+            model_name="versionperson",
+            name="date_of_death_date_to",
+            field=models.DateField(
+                auto_created=True, blank=True, editable=False, null=True
+            ),
         ),
         migrations.AlterField(
-            model_name='versionplace',
-            name='feature_code',
-            field=models.CharField(blank=True, default='', help_text='<a href="https://www.geonames.org/export/codes.html">Geonames Feature Code List</a>', max_length=16, verbose_name='feature code'),
+            model_name="versionplace",
+            name="feature_code",
+            field=models.CharField(
+                blank=True,
+                default="",
+                help_text='<a href="https://www.geonames.org/export/codes.html">Geonames Feature Code List</a>',
+                max_length=16,
+                verbose_name="feature code",
+            ),
         ),
         migrations.AlterField(
-            model_name='versionplace',
-            name='label',
-            field=models.CharField(blank=True, default='', max_length=4096, verbose_name='label'),
+            model_name="versionplace",
+            name="label",
+            field=models.CharField(
+                blank=True, default="", max_length=4096, verbose_name="label"
+            ),
         ),
         migrations.AlterField(
-            model_name='versionplace',
-            name='latitude',
-            field=models.FloatField(blank=True, null=True, verbose_name='latitude'),
+            model_name="versionplace",
+            name="latitude",
+            field=models.FloatField(blank=True, null=True, verbose_name="latitude"),
         ),
         migrations.AlterField(
-            model_name='versionplace',
-            name='longitude',
-            field=models.FloatField(blank=True, null=True, verbose_name='longitude'),
+            model_name="versionplace",
+            name="longitude",
+            field=models.FloatField(blank=True, null=True, verbose_name="longitude"),
         ),
     ]

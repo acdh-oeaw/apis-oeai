@@ -5,25 +5,79 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('apis_ontology', '0002_person_date_of_birth_person_date_of_birth_date_from_and_more'),
+        (
+            "apis_ontology",
+            "0002_person_date_of_birth_person_date_of_birth_date_from_and_more",
+        ),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='person',
-            name='person_type',
-            field=models.CharField(blank=True, choices=[('Urheber, Unbekannt', 'Urheber, Unbekannt'), ('archaeologist', 'archaeologist'), ('architect', 'architect'), ('artist', 'artist'), ('collector', 'collector'), ('excavation personnel', 'excavation personnel'), ('explorer', 'explorer'), ('institution personnel', 'institution personnel'), ('mosaicist', 'mosaicist'), ('painter', 'painter'), ('person', 'person'), ('potter', 'potter'), ('sculptor', 'sculptor'), ('vase painter', 'vase painter'), ('Anonymous', 'Anonymous'), ('processer', 'processer'), ('modern person', 'modern person'), ('historical person', 'historical person')], max_length=255, null=True),
+            model_name="person",
+            name="person_type",
+            field=models.CharField(
+                blank=True,
+                choices=[
+                    ("Urheber, Unbekannt", "Urheber, Unbekannt"),
+                    ("archaeologist", "archaeologist"),
+                    ("architect", "architect"),
+                    ("artist", "artist"),
+                    ("collector", "collector"),
+                    ("excavation personnel", "excavation personnel"),
+                    ("explorer", "explorer"),
+                    ("institution personnel", "institution personnel"),
+                    ("mosaicist", "mosaicist"),
+                    ("painter", "painter"),
+                    ("person", "person"),
+                    ("potter", "potter"),
+                    ("sculptor", "sculptor"),
+                    ("vase painter", "vase painter"),
+                    ("Anonymous", "Anonymous"),
+                    ("processer", "processer"),
+                    ("modern person", "modern person"),
+                    ("historical person", "historical person"),
+                ],
+                max_length=255,
+                null=True,
+            ),
         ),
         migrations.AlterField(
-            model_name='person',
-            name='profession',
-            field=models.ForeignKey(blank=True, on_delete=django.db.models.deletion.CASCADE, to='apis_ontology.profession'),
+            model_name="person",
+            name="profession",
+            field=models.ForeignKey(
+                blank=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                to="apis_ontology.profession",
+            ),
         ),
         migrations.AlterField(
-            model_name='versionperson',
-            name='person_type',
-            field=models.CharField(blank=True, choices=[('Urheber, Unbekannt', 'Urheber, Unbekannt'), ('archaeologist', 'archaeologist'), ('architect', 'architect'), ('artist', 'artist'), ('collector', 'collector'), ('excavation personnel', 'excavation personnel'), ('explorer', 'explorer'), ('institution personnel', 'institution personnel'), ('mosaicist', 'mosaicist'), ('painter', 'painter'), ('person', 'person'), ('potter', 'potter'), ('sculptor', 'sculptor'), ('vase painter', 'vase painter'), ('Anonymous', 'Anonymous'), ('processer', 'processer'), ('modern person', 'modern person'), ('historical person', 'historical person')], max_length=255, null=True),
+            model_name="versionperson",
+            name="person_type",
+            field=models.CharField(
+                blank=True,
+                choices=[
+                    ("Urheber, Unbekannt", "Urheber, Unbekannt"),
+                    ("archaeologist", "archaeologist"),
+                    ("architect", "architect"),
+                    ("artist", "artist"),
+                    ("collector", "collector"),
+                    ("excavation personnel", "excavation personnel"),
+                    ("explorer", "explorer"),
+                    ("institution personnel", "institution personnel"),
+                    ("mosaicist", "mosaicist"),
+                    ("painter", "painter"),
+                    ("person", "person"),
+                    ("potter", "potter"),
+                    ("sculptor", "sculptor"),
+                    ("vase painter", "vase painter"),
+                    ("Anonymous", "Anonymous"),
+                    ("processer", "processer"),
+                    ("modern person", "modern person"),
+                    ("historical person", "historical person"),
+                ],
+                max_length=255,
+                null=True,
+            ),
         ),
     ]

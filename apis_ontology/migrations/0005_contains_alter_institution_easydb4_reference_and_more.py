@@ -6,60 +6,87 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('apis_ontology', '0004_alter_person_profession'),
-        ('relations', '0001_initial'),
+        ("apis_ontology", "0004_alter_person_profession"),
+        ("relations", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Contains',
+            name="Contains",
             fields=[
-                ('relation_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='relations.relation')),
-                ('begin', django_interval.fields.FuzzyDateParserField(blank=True)),
-                ('end', django_interval.fields.FuzzyDateParserField(blank=True)),
-                ('begin_date_sort', models.DateField(blank=True, editable=False, null=True)),
-                ('begin_date_from', models.DateField(blank=True, editable=False, null=True)),
-                ('begin_date_to', models.DateField(blank=True, editable=False, null=True)),
-                ('end_date_sort', models.DateField(blank=True, editable=False, null=True)),
-                ('end_date_from', models.DateField(blank=True, editable=False, null=True)),
-                ('end_date_to', models.DateField(blank=True, editable=False, null=True)),
+                (
+                    "relation_ptr",
+                    models.OneToOneField(
+                        auto_created=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        parent_link=True,
+                        primary_key=True,
+                        serialize=False,
+                        to="relations.relation",
+                    ),
+                ),
+                ("begin", django_interval.fields.FuzzyDateParserField(blank=True)),
+                ("end", django_interval.fields.FuzzyDateParserField(blank=True)),
+                (
+                    "begin_date_sort",
+                    models.DateField(blank=True, editable=False, null=True),
+                ),
+                (
+                    "begin_date_from",
+                    models.DateField(blank=True, editable=False, null=True),
+                ),
+                (
+                    "begin_date_to",
+                    models.DateField(blank=True, editable=False, null=True),
+                ),
+                (
+                    "end_date_sort",
+                    models.DateField(blank=True, editable=False, null=True),
+                ),
+                (
+                    "end_date_from",
+                    models.DateField(blank=True, editable=False, null=True),
+                ),
+                (
+                    "end_date_to",
+                    models.DateField(blank=True, editable=False, null=True),
+                ),
             ],
             options={
-                'verbose_name': 'contains',
-                'verbose_name_plural': 'contain',
+                "verbose_name": "contains",
+                "verbose_name_plural": "contain",
             },
-            bases=('relations.relation',),
+            bases=("relations.relation",),
         ),
         migrations.AlterField(
-            model_name='institution',
-            name='easydb4_reference',
+            model_name="institution",
+            name="easydb4_reference",
             field=models.CharField(blank=True, max_length=100, null=True),
         ),
         migrations.AlterField(
-            model_name='institution',
-            name='hierarchy',
+            model_name="institution",
+            name="hierarchy",
             field=models.CharField(blank=True, max_length=100, null=True),
         ),
         migrations.AlterField(
-            model_name='institution',
-            name='system_object_id',
+            model_name="institution",
+            name="system_object_id",
             field=models.IntegerField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='versioninstitution',
-            name='easydb4_reference',
+            model_name="versioninstitution",
+            name="easydb4_reference",
             field=models.CharField(blank=True, max_length=100, null=True),
         ),
         migrations.AlterField(
-            model_name='versioninstitution',
-            name='hierarchy',
+            model_name="versioninstitution",
+            name="hierarchy",
             field=models.CharField(blank=True, max_length=100, null=True),
         ),
         migrations.AlterField(
-            model_name='versioninstitution',
-            name='system_object_id',
+            model_name="versioninstitution",
+            name="system_object_id",
             field=models.IntegerField(blank=True, null=True),
         ),
     ]

@@ -5,8 +5,6 @@ from apis_ontology.models import (
     Contains,
     Institution,
     LocatedIn,
-    Place,
-    Profession,
     Includes,
     Place,
 )
