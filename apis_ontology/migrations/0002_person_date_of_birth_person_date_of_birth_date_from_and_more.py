@@ -5,90 +5,89 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('apis_ontology', '0001_initial'),
+        ("apis_ontology", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='person',
-            name='date_of_birth',
+            model_name="person",
+            name="date_of_birth",
             field=django_interval.fields.FuzzyDateParserField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_birth_date_from',
+            model_name="person",
+            name="date_of_birth_date_from",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_birth_date_sort',
+            model_name="person",
+            name="date_of_birth_date_sort",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_birth_date_to',
+            model_name="person",
+            name="date_of_birth_date_to",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_death',
+            model_name="person",
+            name="date_of_death",
             field=django_interval.fields.FuzzyDateParserField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_death_date_from',
+            model_name="person",
+            name="date_of_death_date_from",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_death_date_sort',
+            model_name="person",
+            name="date_of_death_date_sort",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='person',
-            name='date_of_death_date_to',
+            model_name="person",
+            name="date_of_death_date_to",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_birth',
+            model_name="versionperson",
+            name="date_of_birth",
             field=django_interval.fields.FuzzyDateParserField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_birth_date_from',
+            model_name="versionperson",
+            name="date_of_birth_date_from",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_birth_date_sort',
+            model_name="versionperson",
+            name="date_of_birth_date_sort",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_birth_date_to',
+            model_name="versionperson",
+            name="date_of_birth_date_to",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_death',
+            model_name="versionperson",
+            name="date_of_death",
             field=django_interval.fields.FuzzyDateParserField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_death_date_from',
+            model_name="versionperson",
+            name="date_of_death_date_from",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_death_date_sort',
+            model_name="versionperson",
+            name="date_of_death_date_sort",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
         migrations.AddField(
-            model_name='versionperson',
-            name='date_of_death_date_to',
+            model_name="versionperson",
+            name="date_of_death_date_to",
             field=models.DateField(blank=True, editable=False, null=True),
         ),
     ]

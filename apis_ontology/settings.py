@@ -1,4 +1,4 @@
-from apis_acdhch_default_settings.settings import *
+from apis_acdhch_default_settings.settings import *  # noqa: F403
 
 # INSTALLED_APPS.remove("apis_ontology")
 ROOT_URLCONF = "apis_ontology.urls"
