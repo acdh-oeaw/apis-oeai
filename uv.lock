@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = "==3.11.*"
 
 [[package]]
@@ -30,7 +30,7 @@ wheels = [
 
 [[package]]
 name = "apis-acdhch-default-settings"
-version = "2.11.0"
+version = "2.14.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "apis-acdhch-django-auditlog" },
@@ -52,9 +52,9 @@ dependencies = [
     { name = "requests" },
     { name = "whitenoise" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/79/21/71d7589da1410564b5d4884fa038057a518c4cb837704873d407424b627a/apis_acdhch_default_settings-2.11.0.tar.gz", hash = "sha256:617f4c44b8427022e674b4dea5d8e6b5742a97847f1d2c38157b239182a406a9", size = 14057, upload-time = "2025-06-26T08:25:17.242Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/de/7d/38fe19f6e1ce2e8c6585435df96aeb685b90de262ed14a1223723e5d2a70/apis_acdhch_default_settings-2.14.0.tar.gz", hash = "sha256:b3eb36e68607a44a078fd339ddb3f173b5528f0329f90f81721deb640a8c892f", size = 15012, upload-time = "2025-09-24T11:11:32.67Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/01/fa/a4014b0e13e78db10b61c7a767cc23a77b1df7fa8fe2d53b1316747c0c6e/apis_acdhch_default_settings-2.11.0-py3-none-any.whl", hash = "sha256:921adc977879ad82a95055fed261f015c256c3cde3a4fee44336cd825f080e3f", size = 10737, upload-time = "2025-06-26T08:25:15.839Z" },
+    { url = "https://files.pythonhosted.org/packages/5e/b0/f1398efed8699d8cc86abc94de01c8483958553dd9add49fbb5f44c86e90/apis_acdhch_default_settings-2.14.0-py3-none-any.whl", hash = "sha256:6eb729c696a417104cb323f216aaff7f40dcc0fc20597da87bd0735315475b56", size = 11416, upload-time = "2025-09-24T11:11:31.429Z" },
 ]
 
 [[package]]
@@ -72,11 +72,10 @@ wheels = [
 
 [[package]]
 name = "apis-core-rdf"
-version = "0.50.1"
+version = "0.55.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "acdh-arche-assets" },
-    { name = "crispy-bootstrap4" },
     { name = "crispy-bootstrap5" },
     { name = "django" },
     { name = "django-autocomplete-light" },
@@ -93,9 +92,9 @@ dependencies = [
     { name = "rdflib" },
     { name = "tablib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/2a/3b/6e89948d6fcc15b94280470eb95ef6727e26f8fce1d3e69389fdf8feb034/apis_core_rdf-0.50.1.tar.gz", hash = "sha256:949de4c803286a5ab56499359cfd1a3aa894a87e3c0232f1bbdc9b38524980a5", size = 3356657, upload-time = "2025-07-31T10:25:48.589Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/96/cc/f5b1237a66f330f50b5433ffab719c0caf59dda20bc5c18e7c61374c05fe/apis_core_rdf-0.55.0.tar.gz", hash = "sha256:b0493f77c81ba6a0a55278f3d954f6b07877c28ae55da04bdea8b7f21bf54e9c", size = 270994, upload-time = "2025-09-24T10:18:19.851Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6f/b3/9742cc1eb5cd0edbf21a6cc0b0f8c6a33f360909c41eac03e32cb6545693/apis_core_rdf-0.50.1-py3-none-any.whl", hash = "sha256:b12ca38a25b66efbab0938fd6460ca3baae4b395c91277591710840bf8e64b12", size = 3324356, upload-time = "2025-07-31T10:25:46.457Z" },
+    { url = "https://files.pythonhosted.org/packages/46/e7/377e4fc1c17a9ac8c86b4b277e0f58196e03d7aa25014eb7b1f24daf7190/apis_core_rdf-0.55.0-py3-none-any.whl", hash = "sha256:ab84b66efadda4bcf1f3c6a40bd57476b1ae569ce07c7e5314b1e9ca505a96a1", size = 241285, upload-time = "2025-09-24T10:18:17.983Z" },
 ]
 
 [[package]]
@@ -119,8 +118,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "apis-acdhch-default-settings", specifier = "==2.11.0" },
-    { name = "apis-core-rdf", specifier = "==0.50.1" },
+    { name = "apis-acdhch-default-settings", specifier = "==2.14.0" },
+    { name = "apis-core-rdf", specifier = "==0.55.0" },
     { name = "django-interval", specifier = ">=0.5.1,<0.6" },
     { name = "django-json-editor-field", specifier = ">=0.4.2,<0.5" },
     { name = "psycopg2-binary", specifier = ">=2.9.10" },
@@ -183,19 +182,6 @@ wheels = [
 ]
 
 [[package]]
-name = "crispy-bootstrap4"
-version = "2024.10"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "django" },
-    { name = "django-crispy-forms" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/69/0b/6a3e2ab27d9eab3fd95628e45212454ac486b2c501def355f3c425cf4ae3/crispy-bootstrap4-2024.10.tar.gz", hash = "sha256:503e8922b0f3b5262a6fdf303a3a94eb2a07514812f1ca130b88f7c02dd25e2b", size = 35301, upload-time = "2024-10-05T15:41:50.457Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/de/a9/2a22c0e6b72323205a6780f9a93e8121bc2c81338d34a0ddc1f6d1a958e7/crispy_bootstrap4-2024.10-py3-none-any.whl", hash = "sha256:138a97884044ae4c4799c80595b36c42066e4e933431e2e971611e251c84f96c", size = 23060, upload-time = "2024-10-05T15:41:48.907Z" },
-]
-
-[[package]]
 name = "crispy-bootstrap5"
 version = "2024.10"
 source = { registry = "https://pypi.org/simple" }
@@ -248,16 +234,16 @@ wheels = [
 
 [[package]]
 name = "django"
-version = "5.1.6"
+version = "5.2.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
     { name = "sqlparse" },
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/e4/901f54ee114a080371a49bd08fa688d301aaffd9751febaf4ae855fc8fcd/Django-5.1.6.tar.gz", hash = "sha256:1e39eafdd1b185e761d9fab7a9f0b9fa00af1b37b25ad980a8aa0dac13535690", size = 10700620, upload-time = "2025-02-05T14:16:25.948Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4c/8c/2a21594337250a171d45dda926caa96309d5136becd1f48017247f9cdea0/django-5.2.6.tar.gz", hash = "sha256:da5e00372763193d73cecbf71084a3848458cecf4cee36b9a1e8d318d114a87b", size = 10858861, upload-time = "2025-09-03T13:04:03.23Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/75/6f/d2c216d00975e2604b10940937b0ba6b2c2d9b3cc0cc633e414ae3f14b2e/Django-5.1.6-py3-none-any.whl", hash = "sha256:8d203400bc2952fbfb287c2bbda630297d654920c72a73cc82a9ad7926feaad5", size = 8277066, upload-time = "2025-02-05T14:16:00.563Z" },
+    { url = "https://files.pythonhosted.org/packages/f5/af/6593f6d21404e842007b40fdeb81e73c20b6649b82d020bb0801b270174c/django-5.2.6-py3-none-any.whl", hash = "sha256:60549579b1174a304b77e24a93d8d9fafe6b6c03ac16311f3e25918ea5a20058", size = 8303111, upload-time = "2025-09-03T13:03:47.808Z" },
 ]
 
 [[package]]
