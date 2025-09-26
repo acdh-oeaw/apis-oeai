@@ -75,7 +75,9 @@ class Person(VersionMixin, AbstractEntity):
 
     label = models.CharField(max_length=255, help_text="PrefLabel in German")
     historical = models.BooleanField(default=True)
-    profession = models.ForeignKey(Profession, on_delete=models.CASCADE, null=True)
+    profession = models.ForeignKey(
+        Profession, on_delete=models.CASCADE, null=True, blank=True
+    )
     period = models.CharField(choices=PERIOD, blank=True, null=True)
     period_detail = models.CharField(choices=PERIOD_DETAIL, blank=True, null=True)
     person_type = models.CharField(
