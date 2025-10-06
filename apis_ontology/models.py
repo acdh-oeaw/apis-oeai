@@ -167,9 +167,6 @@ class Institution(
     AbstractEntity,
 ):
     label = models.CharField(max_length=255, help_text="PrefLabel in German")
-    abbreviation = models.CharField(max_length=100, blank=True, null=True)
-    easydb4_reference = models.CharField(max_length=100, null=True, blank=True)
-    system_object_id = models.IntegerField(null=True, blank=True)
     hierarchy = models.CharField(max_length=100, null=True, blank=True)
     schema = {
         "title": "Alternative Labels",
