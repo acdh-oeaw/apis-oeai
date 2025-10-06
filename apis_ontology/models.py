@@ -78,6 +78,7 @@ class Person(OeaiBaseEntity, VersionMixin, AbstractEntity):
     ]
 
     label = models.CharField(max_length=255, help_text="PrefLabel in German")
+    notes = models.TextField(blank=True, null=True)
     historical = models.BooleanField(default=True)
     profession = models.ForeignKey(
         Profession, on_delete=models.CASCADE, null=True, blank=True
@@ -168,6 +169,7 @@ class Institution(
 ):
     label = models.CharField(max_length=255, help_text="PrefLabel in German")
     hierarchy = models.CharField(max_length=100, null=True, blank=True)
+    notes = models.TextField(blank=True, null=True)
     schema = {
         "title": "Alternative Labels",
         "type": "array",
