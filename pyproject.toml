@@ -3,7 +3,7 @@ name = "apis-oeai"
 version = "0.1.0"
 description = "APIS OEAI"
 authors = [{ name = "Matthias Schlögl" }]
-requires-python = "~=3.11.0"
+requires-python = "~=3.13.0"
 license = "MIT"
 dependencies = [
     "apis-core-rdf==0.55.1",
